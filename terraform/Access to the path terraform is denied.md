@@ -1,5 +1,5 @@
 
-Access to the path '/opt/vsts/ado_agent/_work/4/a/.terraform' is denied
+### Access to the path '/opt/vsts/ado_agent/_work/4/a/.terraform' is denied
 
 This error came up while running a AzureDevOps pipeline to call to kickoff terraform which is running in an AWS VM on docker. 
 Basically terraform is running on docker in AWS VM and from Azure DevOps the pipeline trying to kickoff the terraform pipeline. 
@@ -11,4 +11,13 @@ The user which run the ADO pipeline is "vsts". It doesn't support to run 'sudo'
 
 Normally login to the VM , the path "/opt/vsts/ado_agent/_work/4/a/" is not available. For that follow the below steps
 
--
+```
+- sudo bash
+- su - vsts
+- ls -la
+- cd ado_agent/_work/4/a/
+```
+
+Now you get this location. 
+
+Fix: You can manually delete ".terraform" and trigger your pipeline again. 
