@@ -11,6 +11,7 @@ Decode the error message by below sts command
 ```
 aws sts decode-authorization-message --encoded-message <copy-the encoded-message-here>
 ```
+If you get permission error the [Check here](https://github.com/e2eSolutionArchitect/KEDB/blob/main/aws/decode-authorization-message.md)
 
 It will show detail decoded message. 
 
