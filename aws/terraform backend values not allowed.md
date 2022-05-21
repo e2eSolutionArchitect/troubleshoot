@@ -56,7 +56,8 @@ create a config file 'backend.config'. if you are managing multiple environments
     dynamodb_table = "e2esa-tf-locks"
     encrypt        = true
     profile        = "development"
-``
+  
+```
   
 ### Step 3:
 
