@@ -42,3 +42,55 @@ provider "aws" {
 }
 
 ```
+
+### Step 2:
+
+create a config file 'backend.config'. if you are managing multiple environments in parallel then you can create multiple files like <env>-backend.config (dev-backend.confi, prd-backend.config)
+
+<env>-backend.config contains your environment specific back details like below
+  
+```
+    bucket         = "e2esa-tf-states"
+    key            = "ecs-cluster/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "e2esa-tf-locks"
+    encrypt        = true
+    profile        = "development"
+``
+  
+### Step 3:
+
+Now initialize and apply terraform
+### IMPORTANT NOTE
+  If you are managing SINGLE environment only then don't worry 
+  
+  ```
+  terraform init -backend-config="backend.conf"   
+  ```
+  
+  If you are managing MULTIPLE environments (dev,qa,prd etc) then you have to -reconfigure EVERY TIME you want to switch environment like below
+  
+  ```
+  Initialize very first time (suppose for dev environment
+  
+  terraform init -backend-config="dev-backend.conf" 
+  terraform apply
+  
+  Now switching to other environemnt (suppose prod )
+  
+  terraform init -reconfigure -backend-config="prod-backend.conf" 
+  terraform apply
+  
+  NEVER do -migrate-state. Otherwise migrate-state will actually initialize your Prod backend with Dev state and will mixup
+  
+  Now again switch to another environment (Suppose QA)
+  
+  terraform init -reconfigure -backend-config="qa-backend.conf" 
+  terraform apply
+  
+  And enjoy managing multiple environments like this
+  ```
+  
+  A step by step video tutorial will be shared soon.
+  for any queries please feel free to contact som@e2eSolutionArchitect.com and visit Terraform advance articles here https://e2esolutionarchitect.com/tag/terraform/
+  
