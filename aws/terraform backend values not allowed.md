@@ -82,7 +82,7 @@ Now initialize and apply terraform
   terraform init -reconfigure -backend-config="prod-backend.conf" 
   terraform apply
   
-  NEVER do -migrate-state. Otherwise migrate-state will actually initialize your Prod backend with Dev state and will mixup
+  NEVER do -migrate-state. Otherwise migrate-state will actually mix your your Prod state with Dev state and apply may fail for access and resource not found issues
   
   Now again switch to another environment (Suppose QA)
   
