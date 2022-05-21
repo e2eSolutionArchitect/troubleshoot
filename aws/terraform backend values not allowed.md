@@ -72,7 +72,7 @@ Now initialize and apply terraform
   If you are managing MULTIPLE environments (dev,qa,prd etc) then you have to -reconfigure EVERY TIME you want to switch environment like below
   
   ```
-  Initialize very first time (suppose for dev environment
+  Initialize very first time (suppose for dev environment)
   
   terraform init -backend-config="dev-backend.conf" 
   terraform apply
@@ -93,5 +93,7 @@ Now initialize and apply terraform
   ```
   
   A step by step video tutorial will be shared soon.
-  for any queries please feel free to contact som@e2eSolutionArchitect.com and visit Terraform advance articles here https://e2esolutionarchitect.com/tag/terraform/
+  for any queries please feel free to contact som@e2eSolutionArchitect.com and visit Terraform articles here https://e2esolutionarchitect.com/tag/terraform/
+  
+  [Click here](https://www.youtube.com/watch?v=v3M_PJAcpzU&list=PLuBBTh-4TzDkUiWqlrwwnJ3QFJdP4JiPy) for Terraform Advance tutorials
   
