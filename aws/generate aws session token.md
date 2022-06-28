@@ -1,6 +1,6 @@
 once you have MFA enabled you have to pass the AWS session token to execute aws cli commands. 
 
-I assume you have "aws configure" d already. If not then please [check here] (https://github.com/e2eSolutionArchitect/scripts/blob/main/aws/install-aws-cli.md)
+I assume you have "aws configure" d already. If not then please [check here](https://github.com/e2eSolutionArchitect/scripts/blob/main/aws/install-aws-cli.md)
 
 Step 1: go to your home profile
 
