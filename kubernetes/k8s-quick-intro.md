@@ -41,7 +41,18 @@ Kubernetes is a portable, extensible, opensource platform for managing container
   An agent to assure that the containers are running in a Pod on a Node
   
 - ### kube-proxy > 
-  A network proxy which runs on each node in the k8s cluster. maintain network ruls on nodes.
+  A network proxy which runs on each node in the k8s cluster. maintain network ruls on nodes. Allows network comminucation with pods from network inside and outside of the cluster.
   
+  
+# EKS Kubernetes 
+
+## EKS Kubernetes architecture
+- Master node resides under "EKS Control plane". 
+- EKS Control plane belows to AWS public network. It is not in our AWS vpc nor in aws account. 
+- Worker nodes reside under "EKS Managed Mode Group"
+  
+EKS is managed service. Users need to focus on Application workload design and deploy. Don't need to worry about HA, maintenance etc in any nodes. 
+
+
   
   
