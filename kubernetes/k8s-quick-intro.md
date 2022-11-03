@@ -44,15 +44,20 @@ Kubernetes is a portable, extensible, opensource platform for managing container
   A network proxy which runs on each node in the k8s cluster. maintain network ruls on nodes. Allows network comminucation with pods from network inside and outside of the cluster.
   
   
-# EKS Kubernetes 
-
-## EKS Kubernetes architecture
-- Master node resides under "EKS Control plane". 
-- EKS Control plane belows to AWS public network. It is not in our AWS vpc nor in aws account. 
-- Worker nodes reside under "EKS Managed Mode Group"
   
-EKS is managed service. Users need to focus on Application workload design and deploy. Don't need to worry about HA, maintenance etc in any nodes. 
-
-
+ ## Pod
+ A SINGLE INSTANCE of an application. The smallest object in k8s. 
   
+ ## ReplicaSet
+ Responsible for the availability of a specified number of identical pods
   
+ ## Deployment
+ A deployment runs multiple replicas of application and automatically replaces any instances that fail or become unresponsive. Deployment does Rollout & rollback changes changes to applications. 
+ 
+ ## Service
+ Service sits infront of a pod and acts as a load balancer. It provides a vertual IP and creates an abstruction for number of pods. 
+ 
+ 
+ ## Service
+ 
+ 
