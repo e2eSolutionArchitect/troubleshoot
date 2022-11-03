@@ -17,8 +17,8 @@ Kubernetes is a portable, extensible, opensource platform for managing container
 ## Conponents in Master node
 - Contrainer runtime ( such as Docker )
 - etcd > is a key-value store. stores master and node information
-- kube-scheduler > 
-- kube-apiserver >
+- #### kube-scheduler > 
+- kube-apiserver > It exposes k8s APIs. everyone, clitool kubectl, Users and masters components like scheduler, controller manager, etcd, worker node components like 'kubelet', everyone talk with API server. 
 - kube controller manager >
 - Cloud controller manager >
 
