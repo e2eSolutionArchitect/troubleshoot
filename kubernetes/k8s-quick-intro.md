@@ -12,7 +12,7 @@ Kubernetes is a portable, extensible, opensource platform for managing container
 
 ## High level K8s architecture
 - A k8s custer has a Master and one or more Worker Nodes
-- Every nodes have container runtime installed. (container runtime such as docker or some other CR)
+- Every nodes have container runtime installed. (container runtime such as docker, rkt, container-d etc)
 
 ## Conponents in Master node
 - Contrainer runtime ( such as Docker )
@@ -25,16 +25,23 @@ Kubernetes is a portable, extensible, opensource platform for managing container
 - ### kube-apiserver > 
   It exposes k8s APIs. everyone, clitool kubectl, Users and masters components like scheduler, controller manager, etcd, worker node components like 'kubelet', everyone talk with API server. 
   
-- ### kube controller manager >
+- ### kube-controller-manager >
   Basically a watcher for resiliency. If any container, node or endpoint goes down then it brings up new  container, node or endpoint . 
     - Node controller >
     - Replication Controller >
     - Endpoint Controller >
     - Service Account & Token Controller > 
 
-- ### Cloud controller manager >
+- ### cloud-controller-manager >
+   Cloud specific controll logic in k8s control plane. controller specific to cloud providers.
 
 ## Conponents in Worker node
 - Contrainer runtime ( such as Docker )
-- kubelet > 
-- kube-proxy > 
+- ### kubelet > 
+  An agent to assure that the containers are running in a Pod on a Node
+  
+- ### kube-proxy > 
+  A network proxy which runs on each node in the k8s cluster. maintain network ruls on nodes.
+  
+  
+  
