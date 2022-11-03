@@ -46,7 +46,13 @@ Kubernetes is a portable, extensible, opensource platform for managing container
   
   
  ## Pod
- A SINGLE INSTANCE of an application. The smallest object in k8s. 
+ - A SINGLE INSTANCE of an application. 
+ - The smallest object in k8s. 
+ - K8s DOESN'T deploy container directly on nodes. Container is encapsulated into POD (k8s object)
+ - pod generally has one-to-one relationship with containers. we do scale up or scale down for pods. not containers. 
+ - there can be more than one container in a single pod but it is NOT recommended. 
+ - In multi-container pod case , when we need a helper container/side car container for data puller/data pusher then only we use multi-container. 
+ - 
   
  ## ReplicaSet
  Responsible for the availability of a specified number of identical pods
