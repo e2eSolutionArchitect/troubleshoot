@@ -15,9 +15,14 @@ Kubernetes is a portable, extensible, opensource platform for managing container
 - Every nodes have container runtime installed. (container runtime such as docker or some other CR)
 
 ## Conponents in Master node
+- Contrainer runtime ( such as Docker )
 - etcd > is a key-value store. stores master and node information
 - kube-scheduler > 
 - kube-apiserver >
 - kube controller manager >
 - Cloud controller manager >
 
+## Conponents in Worker node
+- Contrainer runtime ( such as Docker )
+- kubelet > 
+- kube-proxy > 
