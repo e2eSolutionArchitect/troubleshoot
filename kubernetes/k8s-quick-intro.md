@@ -56,8 +56,5 @@ Kubernetes is a portable, extensible, opensource platform for managing container
  
  ## Service
  Service sits infront of a pod and acts as a load balancer. It provides a vertual IP and creates an abstruction for number of pods. 
- 
- 
- ## Service
- 
+
  
