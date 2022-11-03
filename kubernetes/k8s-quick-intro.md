@@ -10,4 +10,8 @@ Kubernetes is a portable, extensible, opensource platform for managing container
 - Self-healing
 - Secret and configuration management
 
+## High level K8s architecture
+- A k8s custer has a Master and one or more Worker Nodes
+- Every nodes have container runtime installed. (container runtime such as docker or some other CR)
+- 
 
