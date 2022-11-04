@@ -1,6 +1,6 @@
 ## could not delete cluster cluster has nodegroups attached
 
-This could be an irritating issue. It can happen for many reason. Please find following steps to debug
+This could be an irritating issue. It can happen for many reasons. Please find following steps to debug
 
 Initial quick fix: 
 - Go to security groups and find security group named as "eks-remoteAccess-". delete it manually. 
