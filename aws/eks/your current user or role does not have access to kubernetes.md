@@ -32,6 +32,10 @@ For that,
 2.1 Download the manifest file from https://s3.us-west-2.amazonaws.com/amazon-eks/docs/eks-console-full-access.yaml
 nothing to update in this file. It has all the priviledges configured.
 
+```
+wget https://s3.us-west-2.amazonaws.com/amazon-eks/docs/eks-console-full-access.yaml
+```
+
 2.2 Deploy the manifest file:
 
 kubectl apply -f eks-console-full-access.yaml
