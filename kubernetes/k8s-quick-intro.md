@@ -14,6 +14,9 @@ Kubernetes is a portable, extensible, opensource platform for managing container
 - A k8s custer has a Master and one or more Worker Nodes
 - Every nodes have container runtime installed. (container runtime such as docker, rkt, container-d etc)
 
+![image](https://user-images.githubusercontent.com/62712515/199984106-df45a310-a431-45d6-836d-3f431fbf177c.png)
+[reference](https://www.cncf.io/blog/2019/08/19/how-kubernetes-works/)
+
 ## Conponents in Master node
 - Contrainer runtime ( such as Docker )
 - ### etcd > 
