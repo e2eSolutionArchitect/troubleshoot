@@ -39,9 +39,10 @@ Make sure you have aws configure done.
 
 2.2 Deploy the manifest file:
 
+```
+Run command
 kubectl apply -f eks-console-full-access.yaml
 
-```
 ubuntu@ip-172-31-44-3:~$ kubectl apply -f eks-console-full-access.yaml
 
 output
@@ -53,6 +54,16 @@ clusterrolebinding.rbac.authorization.k8s.io/eks-console-dashboard-full-access-b
 The below command popup a config file. Add the user "mapUsers" portion mentioned below in the mentioned format
 ```
 kubectl edit configmap aws-auth -n kube-system
+```
+
+```
+mapUsers: |
+  - userarn: arn:aws:iam::<account-no>:user/som@e2esolutionarchitect.com
+    username: som@e2esolutionarchitect.com
+    groups:
+    - system:bootstrappers
+    - system:nodes
+    - eks-console-dashboard-full-access-group
 ```
 
 ```
