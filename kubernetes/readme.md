@@ -1,6 +1,7 @@
 
 - Kubernetes quick intro [click here](https://github.com/e2eSolutionArchitect/KEDB/blob/main/kubernetes/k8s-quick-intro.md)
-- Kubernetes scripts [click here](https://github.com/e2eSolutionArchitect/scripts/tree/main/kubernetes)
+- Kubernetes declarative yaml [click here](https://github.com/e2eSolutionArchitect/scripts/tree/main/kubernetes)
+- [k8s handy commands](https://github.com/e2eSolutionArchitect/scripts/blob/main/kubernetes/k8s-handy-commands.md)
 
 K8s documentations
 - [Kubernetes components](https://kubernetes.io/docs/concepts/overview/components/)
