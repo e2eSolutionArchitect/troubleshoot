@@ -18,3 +18,8 @@ If above steps doesnt help then be ready for a deep dive.
   - select the node group and click delete manually.
   - If it doesnt delete. Go inside the node group and in "Message" tab you will find the reason for failure. 
 - Secondly you run kubectl command to delete the nodes and cluster. [click here](https://github.com/e2eSolutionArchitect/scripts/blob/main/kubernetes/k8s-handy-commands.md) for the commands. 
+
+```
+eksctl delete nodegroup --cluster=<clusterName> --name=<nodegroupName>
+eksctl delete cluster <clusterName>
+```
