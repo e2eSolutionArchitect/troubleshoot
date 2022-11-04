@@ -1,6 +1,8 @@
 ### The connection to the server localhost:8080 was refused - did you specify the right host or port?
 
-It means the kube config is missing
+Maximum time may be you are trying to run kubectl but did do "aws configure". If thats the case then just run "aws configure" and enter credentials. 
+
+Secondly it means the kube config is missing
 ```
 aws eks --region <region> update-kubeconfig --name <cluster-name>
 aws eks --region us-east-1 update-kubeconfig --name e2esa-tutorials-eks-cluster
