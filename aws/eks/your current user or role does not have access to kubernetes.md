@@ -35,6 +35,7 @@ nothing to update in this file. It has all the priviledges configured.
 ```
 wget https://s3.us-west-2.amazonaws.com/amazon-eks/docs/eks-console-full-access.yaml
 ```
+Make sure you have aws configure done. 
 
 2.2 Deploy the manifest file:
 
