@@ -47,6 +47,10 @@ Kubernetes is a portable, extensible, opensource platform for managing container
   A network proxy which runs on each node in the k8s cluster. maintain network ruls on nodes. Allows network comminucation with pods from network inside and outside of the cluster.
   
   
+  ## Kubernetes Cluster
+  ![image](https://user-images.githubusercontent.com/62712515/199985304-8adc7dcb-71c1-4101-8735-47db71333b80.png)
+[Reference](https://kubernetes.io/docs/concepts/overview/components/)
+  
  Please check k8s scripts [here](https://github.com/e2eSolutionArchitect/scripts/tree/main/kubernetes)
  
  ## Pod
