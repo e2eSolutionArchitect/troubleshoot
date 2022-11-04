@@ -42,7 +42,7 @@ Make sure you have aws configure done.
 kubectl apply -f eks-console-full-access.yaml
 
 ```
-ubuntu@ip-172-31-44-3:~$ kubectl apply -f eks-cluster-full-access.yml
+ubuntu@ip-172-31-44-3:~$ kubectl apply -f eks-console-full-access.yaml
 
 output
 clusterrole.rbac.authorization.k8s.io/eks-console-dashboard-full-access-clusterrole created
