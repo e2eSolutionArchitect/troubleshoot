@@ -61,7 +61,12 @@ Kubernetes is a portable, extensible, opensource platform for managing container
  - there can be more than one container in a single pod but it is NOT recommended. 
  - In multi-container pod case , when we need a helper container/side car container for data puller/data pusher then only we use multi-container. 
  
-  
+ ```
+### nodePort:31961 - node port
+### port:81 - service port
+### targetPort: 80 -  this is container port or application port
+```
+
  ## ReplicaSet
  Responsible for maintaining a stable set of replica pods running at a given time. Assures the availability of a specified number of identical pods
  ReplicaSet provides following features
