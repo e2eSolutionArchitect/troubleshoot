@@ -82,6 +82,15 @@ http://57.156.89.23:31961/hello
  ## Deployment
  A deployment runs multiple replicas of application and automatically replaces any instances that fail or become unresponsive. Deployment does Rollout & rollback changes changes to applications. 
  
+- Create a deployment to rollout a ReplicaSet
+- Updating the Deployment
+- Rolling back a Deployment
+- Scalling a Deployment 
+- Pausing and Resuming a deployment 
+- Deployment Status
+- Cleanup Policy
+
+ 
  ## Service
  Service sits infront of a pod and acts as a load balancer. It provides a vertual IP and creates an abstruction for number of pods. 
 
