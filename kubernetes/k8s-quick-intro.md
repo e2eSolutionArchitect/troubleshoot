@@ -66,7 +66,11 @@ Kubernetes is a portable, extensible, opensource platform for managing container
 ### port:81 - service port
 ### targetPort: 80 -  this is container port or application port
 ```
-
+## URL to access your app externally 
+```
+http://<node-public-ip>:<NodePort>/<contextpath>
+http://57.156.89.23:31961/hello
+```
  ## ReplicaSet
  Responsible for maintaining a stable set of replica pods running at a given time. Assures the availability of a specified number of identical pods
  ReplicaSet provides following features
