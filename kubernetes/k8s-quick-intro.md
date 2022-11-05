@@ -63,7 +63,12 @@ Kubernetes is a portable, extensible, opensource platform for managing container
  
   
  ## ReplicaSet
- Responsible for the availability of a specified number of identical pods
+ Responsible for maintaining a stable set of replica pods running at a given time. Assures the availability of a specified number of identical pods
+ ReplicaSet provides following features
+ - High availability and reliabilit
+ - Scaling
+ - Load balancing
+ - Labels & Selectors
   
  ## Deployment
  A deployment runs multiple replicas of application and automatically replaces any instances that fail or become unresponsive. Deployment does Rollout & rollback changes changes to applications. 
