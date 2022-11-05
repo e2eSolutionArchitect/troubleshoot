@@ -7,7 +7,7 @@ I got the great reference from [here](https://stackoverflow.com/questions/707875
 Anyways now its our clean and clear step by step resolution here
 
 1. I assume you have a system/bastian host configured with awscli and kubectl. connect to that system and run below commands to update kubeconfig
-
+## Make sure you have aws configure done. 
 ```
 ubuntu@ip-172-31-44-3:~$ aws eks --region us-east-1 update-kubeconfig --name e2esa-tutorials-eks-cluster
 Added new context arn:aws:eks:us-east-1:<aws-acc-id>:cluster/<cluster-name> to /home/ubuntu/.kube/config
@@ -35,7 +35,6 @@ nothing to update in this file. It has all the priviledges configured.
 ```
 wget https://s3.us-west-2.amazonaws.com/amazon-eks/docs/eks-console-full-access.yaml
 ```
-Make sure you have aws configure done. 
 
 2.2 Deploy the manifest file:
 
