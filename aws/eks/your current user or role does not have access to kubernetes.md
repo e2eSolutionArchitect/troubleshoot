@@ -99,5 +99,8 @@ ubuntu@ip-172-31-44-3:~$ kubectl edit configmap aws-auth -n kube-system
 output 
 configmap/aws-auth edited
 ```
-
+get configmap output
+```
+kubectl get configmap aws-auth -n kube-system -o yaml
+```
 3. refresh the cluster page and you should be able to see all the resources under the cluster.
