@@ -6,3 +6,5 @@
 ## Resoulution
 - For both the cases make sure you have pushed your yml in main branch. Not any other branch.
 - Manu cases the workflow doesnt show up unless it is in main branch. 
+
+Please [check here](https://github.com/e2eSolutionArchitect/sonarcloud-gitaction-terraform-scan) for gitaction pipeline reference.
