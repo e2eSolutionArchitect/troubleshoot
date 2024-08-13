@@ -7,3 +7,13 @@ Cause
 - API version not supported for the resource type.
 - Location not supported for the resource type.
 - For VM auto-shutdown, the Microsoft.DevTestLab resource provider must be registered.
+
+
+```
+az provider list --output table
+az provider list --query "[?registrationState=='Registered']" --output table
+az provider list --query "[?Namespace=='Microsoft.ImportExport']" --output table
+
+# register new resource provider
+az provider register --namespace Microsoft.Cdn
+```
