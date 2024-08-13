@@ -8,6 +8,7 @@ Cause
 - Location not supported for the resource type.
 - For VM auto-shutdown, the Microsoft.DevTestLab resource provider must be registered.
 
+Find name of the Resource Provider [click here](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-services-resource-providers)
 
 ```
 # check the account and subscription you are pointing to
