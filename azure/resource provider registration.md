@@ -10,6 +10,13 @@ Cause
 
 
 ```
+# check the account and subscription you are pointing to
+az account show
+
+# Change subscription ( if required )
+az account set --subscription <Sub name (Not the id) without quote>
+
+# Check provider list
 az provider list --output table
 az provider list --query "[?registrationState=='Registered']" --output table
 az provider list --query "[?Namespace=='Microsoft.ImportExport']" --output table
