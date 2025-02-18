@@ -1,16 +1,16 @@
 
 # Password is not available
 
-## While using the .pem file to decrypt password for the instance. The instance showing 'Password not available'. "Private key must begin with "------BEGIN RSA PRIVATE KEY-----" and end with "------END RSA PRIVATE KEY----""
+## While using the .pem file to decrypt the password for the instance. The instance shows 'Password not available'. "Private key must begin with "------BEGIN RSA PRIVATE KEY-----" and end with "------END RSA PRIVATE KEY----""
 
 ## Solution
 
-This is happensing for Metadata service IMDS v2. 
+This is happening for Metadata service IMDS v2. 
 Select the instance > Actions > Instance settings > Metadata > Enable metadata.
 Now try decrypting the password. 
 
 
-If you are using terraforn then update 'metadata_options' as follows.
+If you are using terraform then update 'metadata_options' as follows.
 ```
 resource "aws_instance" "this" {
   ami                         = var.ami
