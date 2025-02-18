@@ -6,8 +6,11 @@
 ## Solution
 
 This is happening for Metadata service IMDS v2. 
-Select the instance > Actions > Instance settings > Metadata > Enable metadata.
-Now try decrypting the password. 
+Select the instance > Actions > Instance settings > Modify Instance metadata options
+- Instance metadata service - Enable
+- IMDSv2 - Required
+  
+Save and try decrypting the password. 
 
 
 If you are using terraform then update 'metadata_options' as follows.
