@@ -5,12 +5,12 @@ a static website has been setup in Amazon s3 bucket, a CloudFront distribution h
 ---
 
 ### 1. **Verify the Route 53 Hosted Zone Configuration**
-   - Ensure that the domain name (`e2esolutionarchitect.com`) is correctly configured in the Route 53 hosted zone.
+   - Ensure that the domain name (`domain.com`) is correctly configured in the Route 53 hosted zone.
    - Check if there is an **A record** or **CNAME record** pointing to the CloudFront distribution.
      - For CloudFront, you should use an **A record** with an **Alias** target pointing to the CloudFront distribution domain (e.g., `d12345.cloudfront.net`).
      - Example:
        ```
-       Name: e2esolutionarchitect.com
+       Name: domain.com
        Type: A
        Alias: Yes
        Alias Target: d12345.cloudfront.net
@@ -21,13 +21,13 @@ a static website has been setup in Amazon s3 bucket, a CloudFront distribution h
 ### 2. **Verify the CloudFront Distribution Configuration**
    - Ensure that the CloudFront distribution is correctly configured:
      - The **Origin Domain Name** should point to the S3 bucket (e.g., `my-bucket.s3.amazonaws.com`).
-     - The **Alternate Domain Name (CNAME)** in the CloudFront distribution should match your domain (`e2esolutionarchitect.com`).
-     - Ensure that the SSL/TLS certificate for the domain (`e2esolutionarchitect.com`) is attached to the CloudFront distribution.
+     - The **Alternate Domain Name (CNAME)** in the CloudFront distribution should match your domain (`domain.com`).
+     - Ensure that the SSL/TLS certificate for the domain (`domain.com`) is attached to the CloudFront distribution.
 
 ---
 
 ### 3. **Check the SSL/TLS Certificate**
-   - Verify that the SSL/TLS certificate for `e2esolutionarchitect.com` is issued and validated in AWS Certificate Manager (ACM).
+   - Verify that the SSL/TLS certificate for `domain.com` is issued and validated in AWS Certificate Manager (ACM).
    - Ensure that the certificate is in the **US East (N. Virginia)** region if it’s being used with CloudFront.
    - Confirm that the CNAME record for domain validation was correctly added to the Route 53 hosted zone.
 
