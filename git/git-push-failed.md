@@ -10,3 +10,14 @@ hint: its remote counterpart. If you want to integrate the remote changes,
 hint: use 'git pull' before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 ```
+Git pull is not resolving the issue. 
+
+## Fix
+
+```
+git fetch origin
+git pull origin main
+git pull --rebase origin main
+git push origin main
+
+```
