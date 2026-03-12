@@ -16,7 +16,6 @@ Git pull is not resolving the issue.
 
 ```
 git fetch origin
-git pull origin main
 git pull --rebase origin main
 git push origin main
 
